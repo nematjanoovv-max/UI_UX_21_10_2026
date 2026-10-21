@@ -1,0 +1,219 @@
+@import "../base.css";
+
+:root {
+  --bg: #eae4d8;
+  --fg: #1a2138;
+  --muted: #6d6a61;
+  --accent: #b4552f;
+  --accent-fg: #fdf6ee;
+  --card: #f3ede2;
+  --line: rgba(26, 33, 56, 0.18);
+  --r-card: 2px;
+  --r-btn: 2px;
+  --font-display: "Bebas Neue";
+  --font-body: "Inter";
+  --nav-bg: rgba(234, 228, 216, 0.86);
+  --wrap: 1240px;
+  color-scheme: light;
+}
+
+body {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(26, 33, 56, 0.022) 0 2px, transparent 2px 7px),
+    radial-gradient(900px 520px at 100% -6%, rgba(180, 85, 47, 0.1), transparent 62%);
+  background-repeat: repeat, no-repeat;
+}
+
+.bebas {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.88;
+  letter-spacing: 0.012em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(3rem, 9.4vw, 8.2rem);
+  line-height: 0.85;
+  letter-spacing: 0.008em;
+}
+.hero-title .rust { color: var(--accent); }
+
+.stitch {
+  border: 2px dashed rgba(180, 85, 47, 0.55);
+  border-radius: 4px;
+}
+.stitch-top {
+  border-top: 2px dashed rgba(26, 33, 56, 0.35);
+  padding-top: 22px;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.kicker::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.prod-card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.4s;
+}
+.prod-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(180, 85, 47, 0.5);
+}
+.prod-card img {
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s;
+  filter: saturate(0.92);
+}
+.prod-card:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.05);
+}
+.prod-tag {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+}
+
+.fit-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  padding: 6px 11px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.craft-row {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+  padding: 22px 0;
+  border-top: 1px dashed rgba(26, 33, 56, 0.3);
+}
+.craft-no {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.fit-table {
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.fit-table .ft-head,
+.fit-table .ft-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 15px 18px;
+  font-size: 13px;
+}
+.fit-table .ft-head {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+.fit-table .ft-row {
+  border-bottom: 1px dashed rgba(26, 33, 56, 0.22);
+}
+.fit-table .ft-row:last-child {
+  border-bottom: 0;
+}
+.fit-table .ft-row strong {
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .fit-table .ft-head,
+  .fit-table .ft-row {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+  .fit-table .ft-row span:nth-child(4),
+  .fit-table .ft-head span:nth-child(4) {
+    display: none;
+  }
+}
+
+.look-strip {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.look-strip img {
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.look-strip:hover img {
+  transform: scale(1.05);
+}
+
+.review-card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 24px;
+}
+
+.sustain-band {
+  background: var(--fg);
+  color: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+.sustain-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(-45deg, rgba(234, 228, 216, 0.05) 0 10px, transparent 10px 20px);
+  pointer-events: none;
+}
+.sustain-fig {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.vtext {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}

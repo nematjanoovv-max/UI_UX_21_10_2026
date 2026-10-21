@@ -1,0 +1,153 @@
+@import "../base.css";
+
+:root {
+  --bg: #131211;
+  --fg: #f2efe8;
+  --muted: #a29b8d;
+  --accent: #ff5a1f;
+  --accent-fg: #1a1106;
+  --card: #1b1a18;
+  --line: rgba(242, 239, 232, 0.13);
+  --r-card: 6px;
+  --r-btn: 6px;
+  --font-display: "Anton";
+  --font-body: "Inter";
+  --nav-bg: rgba(19, 18, 17, 0.78);
+  --wrap: 1240px;
+  color-scheme: dark;
+}
+
+body { background-image: radial-gradient(1000px 560px at 90% -10%, rgba(255, 90, 31, 0.09), transparent 60%); background-repeat: no-repeat; }
+
+.anton {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.94;
+  letter-spacing: 0.005em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(2.7rem, 6.6vw, 5.6rem);
+  line-height: 0.92;
+  letter-spacing: 0.002em;
+}
+.hero-title em { font-style: normal; color: var(--accent); }
+.hero-title .hollow { color: transparent; -webkit-text-stroke: 1.5px rgba(242, 239, 232, 0.55); }
+
+.hazard {
+  height: 10px;
+  background-image: repeating-linear-gradient(-45deg, var(--accent) 0 12px, transparent 12px 24px);
+  opacity: 0.9;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.kicker::before { content: ""; width: 26px; height: 2px; background: currentColor; }
+
+.btn-primary {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.btn-ghost {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.stat-fig { font-family: var(--font-display); font-size: clamp(2.2rem, 4.4vw, 3.6rem); line-height: 1; }
+.stat-label { font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+
+.cap-row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 22px;
+  align-items: center;
+  padding: 26px 18px;
+  border-top: 1px solid var(--line);
+  transition: background 0.3s, padding 0.3s;
+}
+.cap-row:last-child { border-bottom: 1px solid var(--line); }
+.cap-row:hover { background: rgba(255, 90, 31, 0.07); padding-inline: 28px; }
+.cap-no { font-family: var(--font-display); font-size: 1.5rem; color: var(--accent); opacity: 0.85; }
+.cap-arrow { transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1); }
+.cap-row:hover .cap-arrow { transform: translateX(8px); color: var(--accent); }
+@media (max-width: 640px) { .cap-row { grid-template-columns: 44px 1fr auto; gap: 14px; padding: 22px 10px; } }
+
+.project {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+}
+.project img { transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s; filter: saturate(0.8) brightness(0.88); }
+.project:hover img { transform: scale(1.05); filter: saturate(1) brightness(0.95); }
+.project-info {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(10, 9, 8, 0.94), rgba(10, 9, 8, 0.35) 60%, transparent);
+}
+.project-meta { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
+
+.safety-badge {
+  border: 1px solid rgba(255, 90, 31, 0.45);
+  background: rgba(255, 90, 31, 0.09);
+}
+
+.checklist li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.checklist li svg { flex: none; margin-top: 2px; color: var(--accent); }
+
+.step-no {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  line-height: 0.85;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(242, 239, 232, 0.35);
+}
+.step:hover .step-no { color: var(--accent); -webkit-text-stroke: 0; }
+
+.client-logo {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  white-space: nowrap;
+  opacity: 0.75;
+  transition: opacity 0.3s, color 0.3s;
+}
+.client-logo:hover { opacity: 1; color: var(--fg); }
+
+.cta-panel {
+  border: 1px solid var(--line);
+  background: linear-gradient(160deg, #1c1b19, #141312);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project:hover img { transform: none; }
+}

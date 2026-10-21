@@ -1,0 +1,198 @@
+@import "../base.css";
+
+:root {
+  --bg: #fdf7ef;
+  --fg: #1e3a36;
+  --muted: #667a75;
+  --accent: #0f8a7e;
+  --accent-fg: #f6fffd;
+  --card: #fffdfa;
+  --line: rgba(30, 58, 54, 0.13);
+  --r-card: 26px;
+  --r-btn: 999px;
+  --font-display: "Outfit";
+  --font-body: "Inter";
+  --nav-bg: rgba(253, 247, 239, 0.86);
+  --wrap: 1200px;
+  color-scheme: light;
+}
+
+body {
+  background-image:
+    radial-gradient(760px 480px at 102% -4%, rgba(15, 138, 126, 0.1), transparent 62%),
+    radial-gradient(560px 380px at -6% 48%, rgba(243, 161, 93, 0.16), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.028em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5.6vw, 4.5rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+}
+.hero-title .teal { color: var(--accent); }
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.kicker::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+}
+.pill-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.15);
+}
+
+.float-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 28px 50px -38px rgba(30, 58, 54, 0.55);
+}
+.float-a { animation: bob 6.5s ease-in-out infinite; }
+.float-b { animation: bob 8.5s ease-in-out infinite reverse; }
+@keyframes bob { 50% { transform: translateY(-8px); } }
+
+.svc-card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--card);
+  padding: 26px;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s, border-color 0.4s;
+}
+.svc-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(15, 138, 126, 0.4);
+  box-shadow: 0 30px 54px -44px rgba(15, 138, 126, 0.7);
+}
+.svc-ico {
+  display: grid;
+  place-items: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 14px;
+  background: rgba(15, 138, 126, 0.1);
+  color: var(--accent);
+}
+
+.vet-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.vet-card:hover { transform: translateY(-5px); }
+.vet-card img { transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+.vet-card:hover img { transform: scale(1.04); }
+
+.principle {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.principle-ico {
+  display: grid;
+  place-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background: rgba(15, 138, 126, 0.1);
+  color: var(--accent);
+}
+
+.plan {
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--card);
+  padding: 30px;
+  transition: transform 0.35s, border-color 0.35s;
+}
+.plan:hover { transform: translateY(-4px); }
+.plan.featured {
+  border-color: rgba(15, 138, 126, 0.5);
+  background: linear-gradient(170deg, #ffffff, #edf7f4);
+  position: relative;
+}
+.plan-price { font-family: var(--font-display); font-weight: 700; font-size: 2.5rem; line-height: 1; letter-spacing: -0.03em; }
+
+.review-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  padding: 26px;
+}
+
+.emergency-band {
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.emergency-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(253, 247, 239, 0.14) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(circle at 10% 50%, #000, transparent 55%);
+  pointer-events: none;
+}
+
+.clinic-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.clinic-row:last-child { border-bottom: 1px solid var(--line); }
+.clinic-hours {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-a, .float-b { animation: none; }
+  .svc-card:hover, .vet-card:hover, .plan:hover { transform: none; }
+}

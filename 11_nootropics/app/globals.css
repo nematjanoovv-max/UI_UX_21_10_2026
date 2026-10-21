@@ -1,0 +1,202 @@
+@import "../base.css";
+
+:root {
+  --bg: #0a0b0d;
+  --fg: #edf0f2;
+  --muted: #868d96;
+  --accent: #2ee6c5;
+  --accent-fg: #041f1a;
+  --card: #111417;
+  --line: rgba(237, 240, 242, 0.1);
+  --r-card: 18px;
+  --r-btn: 10px;
+  --font-display: "Sora";
+  --font-body: "Sora";
+  --nav-bg: rgba(10, 11, 13, 0.78);
+  --wrap: 1200px;
+  color-scheme: dark;
+}
+
+body {
+  background-image:
+    radial-gradient(900px 520px at 88% -12%, rgba(46, 230, 197, 0.1), transparent 62%),
+    radial-gradient(700px 460px at -8% 44%, rgba(70, 130, 255, 0.08), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 5.8vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+.hero-title .mint { color: var(--accent); }
+
+.micro {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(237, 240, 242, 0.03);
+  padding: 7px 14px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.chip strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.glass {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: rgba(237, 240, 242, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+.stat-chip {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(10, 11, 13, 0.86);
+  backdrop-filter: blur(8px);
+  padding: 12px 16px;
+}
+
+.step-card {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  position: relative;
+}
+.step-card .micro {
+  color: var(--accent);
+}
+
+.matrix {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  background: rgba(237, 240, 242, 0.02);
+}
+.matrix-row {
+  display: grid;
+  grid-template-columns: 1.35fr 0.55fr 1fr 0.9fr;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 20px;
+  border-top: 1px solid var(--line);
+  font-size: 13.5px;
+}
+.matrix-row.head {
+  border-top: 0;
+  padding: 13px 20px;
+}
+.matrix-row:not(.head):hover {
+  background: rgba(46, 230, 197, 0.045);
+}
+.matrix-bar {
+  height: 5px;
+  border-radius: 4px;
+  background: rgba(237, 240, 242, 0.1);
+  overflow: hidden;
+}
+.matrix-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(46, 230, 197, 0.5), var(--accent));
+}
+@media (max-width: 780px) {
+  .matrix-row {
+    grid-template-columns: 1.3fr 0.7fr;
+  }
+  .matrix-row .col-evidence,
+  .matrix-row .col-amount {
+    display: none;
+  }
+}
+
+.bar-fig {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4.2vw, 3.1rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.result-track {
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(237, 240, 242, 0.09);
+  overflow: hidden;
+  margin-top: 14px;
+}
+.result-track span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(46, 230, 197, 0.35), var(--accent));
+  transform-origin: left;
+}
+
+.plan {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: rgba(237, 240, 242, 0.025);
+  padding: 28px;
+  transition: transform 0.35s, border-color 0.35s;
+}
+.plan:hover { transform: translateY(-4px); }
+.plan.featured {
+  border-color: rgba(46, 230, 197, 0.5);
+  background: linear-gradient(170deg, rgba(46, 230, 197, 0.07), rgba(237, 240, 242, 0.02));
+}
+.plan-price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.review-card {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: rgba(237, 240, 242, 0.025);
+  padding: 24px;
+}
+
+.glow-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(165deg, rgba(46, 230, 197, 0.09), rgba(10, 11, 13, 0.4));
+}
+
+.tick-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 9px 0;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.tick-list svg { flex: none; margin-top: 2px; color: var(--accent); }

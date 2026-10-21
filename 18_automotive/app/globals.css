@@ -1,0 +1,244 @@
+@import "../base.css";
+
+:root {
+  --bg: #f6f5f2;
+  --fg: #17191d;
+  --muted: #6b737b;
+  --accent: #de2f22;
+  --accent-fg: #ffffff;
+  --card: #ffffff;
+  --line: rgba(23, 25, 29, 0.12);
+  --r-card: 6px;
+  --r-btn: 4px;
+  --font-display: "Saira Condensed";
+  --font-body: "Inter";
+  --nav-bg: rgba(246, 245, 242, 0.86);
+  --wrap: 1240px;
+  color-scheme: light;
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(23, 25, 29, 0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 25, 29, 0.026) 1px, transparent 1px);
+  background-size: 72px 72px, 72px 72px;
+}
+
+.display {
+  font-family: var(--font-display), "Arial Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  line-height: 0.96;
+}
+
+.hero-title {
+  font-family: var(--font-display), "Arial Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(2.6rem, 6.4vw, 5.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.005em;
+}
+.hero-title .hot { color: var(--accent); }
+
+.mono {
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.kicker::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+}
+
+.hero-visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+}
+.hero-visual img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: contrast(1.06) saturate(0.92);
+}
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(200deg, rgba(23, 25, 29, 0.05) 34%, rgba(23, 25, 29, 0.62));
+  pointer-events: none;
+}
+
+.spec-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+}
+@media (min-width: 720px) {
+  .spec-strip { grid-template-columns: repeat(4, 1fr); }
+}
+.spec-cell {
+  padding: 18px 0;
+  border-right: 1px solid var(--line);
+}
+.spec-cell:last-child { border-right: 0; }
+@media (max-width: 719px) {
+  .spec-cell { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+.spec-k { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.spec-v { margin-top: 8px; font-family: "DM Mono", ui-monospace, monospace; font-size: 1.35rem; }
+
+.fleet-tab {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  padding: 12px 2px;
+  font-family: var(--font-display), "Arial Narrow", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+  white-space: nowrap;
+}
+.fleet-tab:hover { color: var(--fg); }
+.fleet-tab[data-active="true"] { color: var(--fg); border-color: var(--accent); }
+
+.vehicle-card {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: var(--card);
+  overflow: hidden;
+}
+.vehicle-card img { height: 250px; width: 100%; object-fit: cover; }
+.vehicle-card .body { padding: 24px; }
+.grid-spec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 18px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.grid-spec div { font-size: 12.5px; }
+.grid-spec .k { color: var(--muted); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; }
+.grid-spec .v { margin-top: 5px; font-family: "DM Mono", ui-monospace, monospace; }
+
+.svc-tile {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: var(--card);
+  padding: 26px;
+  height: 100%;
+  transition: transform 0.35s, border-color 0.35s, background 0.35s;
+}
+.svc-tile:hover {
+  transform: translateY(-4px);
+  border-color: rgba(222, 47, 34, 0.45);
+  background: #faf9f6;
+}
+.svc-tile .ico {
+  display: grid;
+  place-items: center;
+  height: 42px;
+  width: 42px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+.dash {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: #ffffff;
+  overflow: hidden;
+}
+.dash-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.dash-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 13px 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+}
+.dash-row:first-of-type { border-top: 0; }
+.pill-ok,
+.pill-warn {
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.pill-ok { background: rgba(72, 199, 142, 0.14); color: #48c78e; }
+.pill-warn { background: rgba(222, 47, 34, 0.16); color: #d4483a; }
+
+.plan {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: var(--card);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: border-color 0.35s, transform 0.35s;
+}
+.plan:hover { transform: translateY(-4px); }
+.plan.featured { border-color: rgba(222, 47, 34, 0.5); background: linear-gradient(180deg, #fff6f4, #ffffff); }
+.plan-price { font-family: "DM Mono", ui-monospace, monospace; font-size: 2.1rem; letter-spacing: -0.02em; }
+
+.tick { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--muted); }
+.tick svg { flex: none; margin-top: 2px; color: var(--accent); }
+
+.depot-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 14px;
+  padding: 15px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  align-items: center;
+}
+.depot-row:last-child { border-bottom: 1px solid var(--line); }
+.depot-row .m { font-family: "DM Mono", ui-monospace, monospace; color: var(--muted); font-size: 12px; }
+
+.band {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background:
+    repeating-linear-gradient(135deg, rgba(222, 47, 34, 0.07) 0 14px, transparent 14px 28px),
+    #ffffff;
+  padding: clamp(2rem, 4.6vw, 3.4rem);
+}

@@ -1,0 +1,193 @@
+@import "../base.css";
+
+:root {
+  --bg: #f6f2ea;
+  --fg: #1d2a23;
+  --muted: #6d7c74;
+  --accent: #17513c;
+  --accent-fg: #f7f4ed;
+  --card: #fffdf9;
+  --line: rgba(29, 42, 35, 0.13);
+  --r-card: 22px;
+  --r-btn: 999px;
+  --font-display: "Fraunces";
+  --font-body: "Inter";
+  --nav-bg: rgba(246, 242, 234, 0.82);
+  --wrap: 1240px;
+  color-scheme: light;
+}
+
+body {
+  background-image: radial-gradient(1200px 600px at 100% -10%, rgba(23, 81, 60, 0.07), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+.serif {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: clamp(2.6rem, 5.6vw, 4.6rem);
+  line-height: 1.01;
+  letter-spacing: -0.025em;
+}
+.hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.search-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 30px 60px -35px rgba(23, 81, 60, 0.35);
+}
+
+.field-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.select,
+.input {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fg);
+  outline: none;
+  cursor: pointer;
+}
+.select:focus,
+.input:focus { border-color: var(--accent); }
+.input::placeholder { color: var(--muted); font-weight: 400; }
+
+.listing {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s;
+  overflow: hidden;
+}
+.listing:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 34px 60px -40px rgba(23, 81, 60, 0.5);
+}
+.listing img {
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.listing:hover img { transform: scale(1.05); }
+
+.price {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.badge-dark { background: var(--fg); color: var(--bg); }
+.badge-accent { background: var(--accent); color: var(--accent-fg); }
+.badge-light { background: rgba(255, 253, 249, 0.9); color: var(--fg); backdrop-filter: blur(6px); }
+
+.marquee-track > * { padding-inline: 2.2rem; }
+.press-item {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.press-item:hover { color: var(--accent); }
+
+.snap-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+.snap-row > * { scroll-snap-align: start; }
+
+.feature-num {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+.stats-band {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.stats-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(247, 244, 237, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse at 85% 20%, #000, transparent 70%);
+  pointer-events: none;
+}
+
+.avatar-ring {
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.tick-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--fg);
+}
+.tick-list li span.ico {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(23, 81, 60, 0.1);
+  color: var(--accent);
+  margin-top: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listing:hover { transform: none; }
+}
