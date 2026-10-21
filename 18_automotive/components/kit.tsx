@@ -6,8 +6,6 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-/* ---------------------------------- motion --------------------------------- */
-
 export function Reveal({
   children,
   delay = 0,
@@ -80,8 +78,6 @@ export function ScrollProgress() {
   );
 }
 
-/* ---------------------------------- counter -------------------------------- */
-
 export function Counter({
   to,
   suffix = "",
@@ -117,8 +113,6 @@ export function Counter({
     </span>
   );
 }
-
-/* ---------------------------------- navbar --------------------------------- */
 
 type NavLink = { label: string; href: string };
 
@@ -246,8 +240,6 @@ export function Navbar({
     </header>
   );
 }
-
-/* ---------------------------------- footer --------------------------------- */
 
 const socialPaths: Record<string, ReactNode> = {
   instagram: (
@@ -378,8 +370,6 @@ export function Footer({
     </footer>
   );
 }
-
-/* ---------------------------------- bits ----------------------------------- */
 
 export function Marquee({ children, className = "", reverse = false }: { children: ReactNode; className?: string; reverse?: boolean }) {
   return (

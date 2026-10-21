@@ -167,7 +167,6 @@ export default function Home() {
         cta={{ label: "Book a viewing", href: "#contact" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-14 pt-12 md:pb-20 md:pt-16">
         <div className="wrap grid items-center gap-12 lg:grid-cols-[1fr_1.08fr]">
           <div>
@@ -245,7 +244,6 @@ export default function Home() {
           </Reveal>
         </div>
 
-        {/* search panel */}
         <Reveal delay={0.2} className="wrap mt-16 md:mt-20">
           <div className="search-panel grid gap-6 p-6 md:grid-cols-[1.2fr_1fr_1fr_auto] md:items-end md:p-8">
             <div>
@@ -286,7 +284,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* press */}
       <section className="border-y border-[var(--line)] py-6">
         <div className="wrap flex flex-col gap-4 md:flex-row md:items-center">
           <p className="shrink-0 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--muted)]">As featured in</p>
@@ -300,7 +297,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* listings */}
       <section id="listings" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -356,7 +352,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* about / features */}
       <section id="about" className="scroll-mt-24 border-y border-[var(--line)] bg-[rgba(255,255,255,.5)] py-20 md:py-28">
         <div className="wrap grid items-center gap-14 lg:grid-cols-2">
           <Reveal>
@@ -414,7 +409,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* neighborhoods */}
       <section id="neighborhoods" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -442,7 +436,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* stats */}
       <section className="pb-20 md:pb-24">
         <div className="wrap">
           <Reveal>
@@ -465,7 +458,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* testimonials */}
       <section id="stories" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <SectionHead eyebrow="Client stories" title="Bought, sold, and still calling us first." align="center" />
@@ -506,7 +498,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* cta */}
       <section id="contact" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>

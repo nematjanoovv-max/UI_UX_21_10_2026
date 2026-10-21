@@ -215,7 +215,6 @@ export default function Home() {
         cta={{ label: "Book a shoot", href: "#contact" }}
       />
 
-      {/* ------------------------------- hero ------------------------------- */}
       <section className="relative">
         <div className="relative h-[62vh] min-h-[420px] w-full overflow-hidden md:h-[76vh]">
           <img
@@ -267,7 +266,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ clients ----------------------------- */}
       <section className="mt-20 border-y border-[var(--line)] py-6">
         <Marquee>
           <div className="flex items-center gap-14 pr-14">
@@ -280,7 +278,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* ------------------------------- work ------------------------------- */}
       <section id="work" className="wrap mt-24">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHead
@@ -330,7 +327,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ----------------------------- services ----------------------------- */}
       <section id="services" className="wrap mt-28">
         <SectionHead
           eyebrow="What we shoot"
@@ -351,7 +347,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ studio ------------------------------ */}
       <section id="studio" className="wrap mt-28">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
@@ -398,7 +393,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ numbers ----------------------------- */}
       <section className="wrap mt-24">
         <Reveal>
           <div className="grid grid-cols-2 gap-y-10 border-y border-[var(--line)] py-12 md:grid-cols-4">
@@ -414,7 +408,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ---------------------------- testimonials -------------------------- */}
       <section className="wrap mt-28">
         <SectionHead
           align="center"
@@ -440,7 +433,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ process ----------------------------- */}
       <section id="process" className="wrap mt-28">
         <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
           <SectionHead
@@ -464,7 +456,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* -------------------------------- faq ------------------------------- */}
       <section className="wrap mt-28">
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
           <SectionHead eyebrow="Questions" title="Before you write." />
@@ -474,7 +465,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ contact ----------------------------- */}
       <section id="contact" className="wrap mt-28">
         <Reveal>
           <div className="band-cta">

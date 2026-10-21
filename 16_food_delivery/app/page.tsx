@@ -174,7 +174,6 @@ export default function Home() {
         cta={{ label: "Order now", href: "#restaurants" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.04fr_.96fr]">
           <div>
@@ -251,7 +250,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* categories */}
       <section className="border-y border-[var(--line)] py-6">
         <div className="wrap flex flex-wrap gap-2.5">
           {[
@@ -270,7 +268,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* restaurants */}
       <section id="restaurants" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -322,7 +319,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* how it works */}
       <section id="how" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -346,7 +342,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* top dishes */}
       <section id="dishes" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap grid gap-14 lg:grid-cols-[1.15fr_.85fr]">
           <div>
@@ -401,7 +396,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* courier band */}
       <section className="pb-20 md:pb-24">
         <div className="wrap">
           <Reveal>
@@ -444,7 +438,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead eyebrow="Reviews" title={<span className="display">4.9 stars from 61,000 people.</span>} align="center" />
@@ -468,7 +461,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* plans */}
       <section id="plans" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead

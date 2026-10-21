@@ -122,7 +122,6 @@ export default function Home() {
         cta={{ label: "Get a quote", href: "#contact" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-20 pt-14 md:pb-28 md:pt-20">
         <div className="line-grid pointer-events-none absolute inset-0 -z-10" aria-hidden />
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.04fr_0.96fr]">
@@ -175,7 +174,6 @@ export default function Home() {
             </Reveal>
           </div>
 
-          {/* tracking card */}
           <Reveal delay={0.15} y={36}>
             <div id="track" className="relative mx-auto w-full max-w-[520px] scroll-mt-28">
               <div className="float-a absolute -right-2 -top-5 z-20 hidden items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-2 text-[11px] shadow-xl sm:flex">
@@ -267,7 +265,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* clients */}
       <section className="border-y border-[var(--line)] py-7">
         <div className="wrap flex flex-col gap-5 md:flex-row md:items-center">
           <p className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--muted)] md:max-w-[170px]">
@@ -283,7 +280,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* services */}
       <section id="services" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -337,7 +333,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* control tower */}
       <section id="network" className="scroll-mt-24 border-y border-[var(--line)] bg-[rgba(255,255,255,.015)] py-20 md:py-28">
         <div className="wrap grid items-center gap-14 lg:grid-cols-2">
           <Reveal>
@@ -418,7 +413,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* stats */}
       <section className="py-16 md:py-20">
         <div className="wrap grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
           {stats.map((s, i) => (
@@ -434,7 +428,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* process */}
       <section id="process" className="scroll-mt-24 pb-20 md:pb-28">
         <div className="wrap">
           <SectionHead
@@ -481,7 +474,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* testimonials */}
       <section id="stories" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
@@ -516,7 +508,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* cta */}
       <section id="contact" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap">
           <Reveal>

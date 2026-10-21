@@ -220,7 +220,6 @@ export default function Home() {
         cta={{ label: "Request a quote", href: "#plans" }}
       />
 
-      {/* ------------------------------- hero ------------------------------- */}
       <section className="wrap mt-12 md:mt-16">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
@@ -292,7 +291,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ------------------------------ clients ----------------------------- */}
       <section className="mt-16 border-y border-[var(--line)] py-5">
         <Marquee>
           <div className="flex items-center gap-12 pr-12">
@@ -305,7 +303,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* ------------------------------- fleet ------------------------------ */}
       <section id="fleet" className="wrap mt-24">
         <SectionHead
           eyebrow="The fleet"
@@ -387,7 +384,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ----------------------------- services ----------------------------- */}
       <section id="services" className="wrap mt-28">
         <SectionHead
           eyebrow="Inside the contract"
@@ -407,7 +403,6 @@ export default function Home() {
         </Stagger>
       </section>
 
-      {/* ------------------------------ uptime ------------------------------ */}
       <section id="uptime" className="wrap mt-28">
         <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
@@ -462,7 +457,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ----------------------------- coverage ----------------------------- */}
       <section id="coverage" className="wrap mt-28">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHead
@@ -492,7 +486,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------- plans ------------------------------ */}
       <section id="plans" className="wrap mt-28">
         <SectionHead
           align="center"
@@ -530,7 +523,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------- testimonials --------------------------- */}
       <section className="wrap mt-28">
         <SectionHead eyebrow="Operators" title="Fleet managers who stopped firefighting." />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
@@ -551,7 +543,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* -------------------------------- faq ------------------------------- */}
       <section className="wrap mt-28">
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
           <SectionHead eyebrow="Questions" title="Contracts, plainly explained." />
@@ -561,7 +552,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ contact ----------------------------- */}
       <section id="contact" className="wrap mt-28">
         <Reveal>
           <div className="band">

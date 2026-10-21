@@ -132,7 +132,6 @@ export default function Home() {
         cta={{ label: "Book online", href: "#book" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.02fr_.98fr]">
           <div>
@@ -218,7 +217,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* services */}
       <section id="services" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -251,7 +249,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* team */}
       <section id="team" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -277,7 +274,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* fear-free */}
       <section className="py-20 md:py-28">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1fr_1fr]">
           <Reveal>
@@ -316,7 +312,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* plans */}
       <section id="plans" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -358,7 +353,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -386,7 +380,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* emergency */}
       <section className="pb-20 md:pb-24">
         <div className="wrap">
           <Reveal>
@@ -414,7 +407,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* clinics */}
       <section id="clinics" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
           <div>
@@ -462,7 +454,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* faq */}
       <section className="border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
           <SectionHead
@@ -495,7 +486,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* book cta */}
       <section id="book" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>

@@ -139,7 +139,6 @@ export default function Home() {
         cta={{ label: "Get an estimate", href: "#contact" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.06fr_.94fr]">
           <div>
@@ -225,7 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* marquee */}
       <section className="border-y border-[var(--line)] py-5">
         <Marquee>
           {["Concrete", "Steel", "Cold storage", "Warehouses", "Fit-out", "Infrastructure"].map((t) => (
@@ -236,7 +234,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* capabilities */}
       <section id="capabilities" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -282,7 +279,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* projects */}
       <section id="work" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -317,7 +313,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* safety */}
       <section id="safety" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap grid items-center gap-14 lg:grid-cols-2">
           <Reveal>
@@ -376,7 +371,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* process */}
       <section id="process" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -403,7 +397,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* clients + reviews */}
       <section className="border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <p className="text-center text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--muted)]">
@@ -440,7 +433,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* cta */}
       <section id="contact" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap">
           <Reveal>

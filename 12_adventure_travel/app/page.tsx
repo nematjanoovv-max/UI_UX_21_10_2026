@@ -201,7 +201,6 @@ export default function Home() {
         cta={{ label: "Book a trip", href: "#departures" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.02fr_.98fr]">
           <div>
@@ -282,7 +281,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* marquee */}
       <section className="border-y border-[var(--line)] py-4">
         <Marquee>
           {["Patagonia", "Dolomites", "Annapurna", "Toubkal", "Vatnajökull", "Cairngorms", "Lofoten", "Atlas Mountains"].map((t) => (
@@ -293,7 +291,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* trips */}
       <section id="trips" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -353,7 +350,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* stats band */}
       <section className="stat-band py-14">
         <div className="wrap grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
           {[
@@ -374,7 +370,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* why us */}
       <section className="py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -399,7 +394,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* guides */}
       <section id="guides" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -424,7 +418,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* itinerary */}
       <section id="itinerary" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap grid gap-14 lg:grid-cols-[1fr_1fr]">
           <div>
@@ -489,7 +482,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead eyebrow="Trip reports" title={<span className="display">1,240 summits. Here are three.</span>} align="center" />
@@ -513,7 +505,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* departures */}
       <section id="departures" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -557,7 +548,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* cta */}
       <section id="join" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>

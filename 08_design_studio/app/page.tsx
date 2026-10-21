@@ -49,7 +49,6 @@ export default function Home() {
         cta={{ label: "Enquire", href: "#contact" }}
       />
 
-      {/* hero */}
       <section className="pb-16 pt-14 md:pb-20">
         <div className="wrap">
           <Reveal>
@@ -144,7 +143,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* work */}
       <section id="work" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -172,7 +170,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* services */}
       <section id="services" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -197,7 +194,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* approach */}
       <section id="approach" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead eyebrow="Approach" title="Three rules we don't bend." />
@@ -227,7 +223,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* clients & awards */}
       <section className="border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap grid gap-14 md:grid-cols-2">
           <div>
@@ -255,7 +250,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* contact */}
       <section id="contact" className="scroll-mt-24 border-t border-[var(--fg)] py-20 md:py-28">
         <div className="wrap grid gap-12 md:grid-cols-[1.3fr_.7fr]">
           <Reveal>

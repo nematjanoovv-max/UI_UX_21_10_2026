@@ -107,7 +107,6 @@ export default function Home() {
         cta={{ label: "Subscribe", href: "#newsletter" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-20 md:pt-16">
         <div className="wrap">
           <div className="grid items-end gap-10 lg:grid-cols-[1.05fr_.95fr]">
@@ -156,7 +155,6 @@ export default function Home() {
             </Reveal>
           </div>
 
-          {/* chips */}
           <Reveal delay={0.1}>
             <div className="chip-row no-scrollbar mt-12 border-y border-[var(--line)] py-4">
               {categories.map((c, i) => (
@@ -169,7 +167,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* featured */}
       <section id="stories" className="scroll-mt-24 pb-20 md:pb-24">
         <div className="wrap">
           <Reveal>
@@ -201,7 +198,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* latest */}
       <section className="border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
@@ -240,7 +236,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ranked guides */}
       <section id="guides" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
@@ -287,7 +282,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* marquee */}
       <section className="border-y border-[var(--line)] py-6">
         <Marquee reverse>
           {["Issued from 14 countries", "Written by locals", "Zero sponsored trips", "Reader-funded since 2019", "No clickbait, ever"].map((t) => (
@@ -298,7 +292,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* writers */}
       <section id="writers" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -323,7 +316,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* newsletter */}
       <section id="newsletter" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>

@@ -128,7 +128,6 @@ export default function Home() {
         cta={{ label: "Shop denim", href: "#shop" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-14 pt-10 md:pb-20 md:pt-14">
         <div className="wrap grid items-end gap-12 lg:grid-cols-[1.08fr_.92fr]">
           <div>
@@ -197,7 +196,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* marquee */}
       <section className="border-y border-[var(--line)] py-4">
         <Marquee>
           {["12 oz selvedge", "Repaired free, forever", "Made in Portugal", "Chain-stitch hems", "Small batches only"].map((t) => (
@@ -208,7 +206,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* shop */}
       <section id="shop" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -249,7 +246,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* lookbook */}
       <section id="lookbook" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <div className="grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
@@ -315,7 +311,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* craft */}
       <section id="craft" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap grid gap-14 lg:grid-cols-[1fr_1fr]">
           <div>
@@ -361,7 +356,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* fit guide */}
       <section id="fit" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
@@ -410,7 +404,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -438,7 +431,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* sustainability */}
       <section className="pb-20 md:pb-24">
         <div className="wrap">
           <Reveal>
@@ -482,7 +474,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* cta */}
       <section className="pb-24">
         <div className="wrap">
           <Reveal>

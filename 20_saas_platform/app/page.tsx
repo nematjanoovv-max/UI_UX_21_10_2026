@@ -182,7 +182,6 @@ export default function Home() {
         cta={{ label: "Start free", href: "#pricing" }}
       />
 
-      {/* ------------------------------- hero ------------------------------- */}
       <section className="wrap mt-14 md:mt-20">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
@@ -210,7 +209,6 @@ export default function Home() {
           </Reveal>
         </div>
 
-        {/* app mock */}
         <Reveal delay={0.12}>
           <div id="product" className="app mt-14">
             <div className="app-top">
@@ -296,7 +294,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ----------------------------- features ----------------------------- */}
       <section id="features" className="wrap mt-28">
         <SectionHead
           align="center"
@@ -317,7 +314,6 @@ export default function Home() {
         </Stagger>
       </section>
 
-      {/* --------------------------- integrations --------------------------- */}
       <section id="integrations" className="wrap mt-28">
         <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <SectionHead
@@ -341,7 +337,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------- steps ------------------------------ */}
       <section className="wrap mt-28">
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <SectionHead
@@ -365,7 +360,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ metrics ----------------------------- */}
       <section className="wrap mt-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
           <Reveal>
@@ -406,7 +400,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ pricing ----------------------------- */}
       <section id="pricing" className="wrap mt-28">
         <SectionHead
           align="center"
@@ -454,7 +447,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ---------------------------- testimonials -------------------------- */}
       <section id="customers" className="wrap mt-28">
         <SectionHead eyebrow="Customers" title="Teams who stopped writing status updates by hand." />
         <div className="mt-14 grid gap-5 md:grid-cols-3">
@@ -479,7 +471,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------- security & faq --------------------------- */}
       <section className="wrap mt-28">
         <div className="grid gap-14 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
@@ -508,7 +499,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ cta/contact ------------------------- */}
       <section id="contact" className="wrap mt-28">
         <Reveal>
           <div className="band">

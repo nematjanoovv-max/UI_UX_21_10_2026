@@ -126,7 +126,6 @@ export default function Home() {
         cta={{ label: "Open an account", href: "#cta" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
         <div className="grid-lines" aria-hidden />
         <div className="wrap relative grid items-center gap-14 lg:grid-cols-[1.02fr_.98fr]">
@@ -178,7 +177,6 @@ export default function Home() {
             </Reveal>
           </div>
 
-          {/* dashboard mock */}
           <Reveal delay={0.15} y={30}>
             <div className="relative">
               <div className="panel p-6">
@@ -226,7 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* clients */}
       <section className="band py-5">
         <div className="wrap flex flex-col gap-4 md:flex-row md:items-center">
           <p className="micro shrink-0">Trusted by finance teams at</p>
@@ -240,7 +237,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* features */}
       <section id="product" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -264,7 +260,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* fees */}
       <section id="fees" className="scroll-mt-24 band py-20 md:py-28">
         <div className="wrap grid gap-14 lg:grid-cols-[.85fr_1.15fr]">
           <div>
@@ -304,7 +299,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* security */}
       <section id="security" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -354,7 +348,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="band py-20 md:py-24">
         <div className="wrap">
           <SectionHead eyebrow="Customers" title={<span className="display">Run by finance teams who count everything.</span>} align="center" />
@@ -378,7 +371,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* pricing */}
       <section id="pricing" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -417,7 +409,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* cta */}
       <section id="cta" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>

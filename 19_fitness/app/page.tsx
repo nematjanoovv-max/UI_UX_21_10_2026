@@ -161,7 +161,6 @@ export default function Home() {
         cta={{ label: "Start free trial", href: "#membership" }}
       />
 
-      {/* ------------------------------- hero ------------------------------- */}
       <section className="wrap mt-10 md:mt-14">
         <div className="grid items-center gap-14 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
@@ -241,7 +240,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ studios ----------------------------- */}
       <section className="mt-16 border-y border-[var(--line)] py-5">
         <Marquee>
           <div className="flex items-center gap-11 pr-11">
@@ -255,7 +253,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* ------------------------------ classes ----------------------------- */}
       <section id="classes" className="wrap mt-24">
         <SectionHead
           eyebrow="Six ways to move"
@@ -282,7 +279,6 @@ export default function Home() {
         </Stagger>
       </section>
 
-      {/* ----------------------------- timetable ---------------------------- */}
       <section id="timetable" className="wrap mt-28">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHead
@@ -327,7 +323,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* -------------------------------- app ------------------------------- */}
       <section id="app" className="wrap mt-28">
         <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
@@ -411,7 +406,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------------------- membership ---------------------------- */}
       <section id="membership" className="wrap mt-28">
         <SectionHead
           align="center"
@@ -449,7 +443,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ coaches ----------------------------- */}
       <section id="coaches" className="wrap mt-28">
         <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <SectionHead
@@ -476,7 +469,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------- stats ------------------------------ */}
       <section className="wrap mt-24">
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {STATS.map((s, i) => (
@@ -492,7 +484,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------- testimonials --------------------------- */}
       <section className="wrap mt-28">
         <SectionHead eyebrow="Members" title="Why people stay past month three." />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
@@ -513,7 +504,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* -------------------------------- faq ------------------------------- */}
       <section className="wrap mt-28">
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
           <SectionHead eyebrow="Questions" title="Everything before your first class." />
@@ -523,7 +513,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------ contact ----------------------------- */}
       <section id="contact" className="wrap mt-28">
         <Reveal>
           <div className="band">

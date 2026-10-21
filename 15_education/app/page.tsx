@@ -170,7 +170,6 @@ export default function Home() {
         cta={{ label: "Apply now", href: "#apply" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.04fr_.96fr]">
           <div>
@@ -253,7 +252,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* tracks */}
       <section id="tracks" className="scroll-mt-24 border-t border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -308,7 +306,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* how it works */}
       <section id="how" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -331,7 +328,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* mentors */}
       <section id="mentors" className="scroll-mt-24 py-20 md:py-24">
         <div className="wrap">
           <SectionHead
@@ -356,7 +352,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* outcomes */}
       <section className="pb-20 md:pb-24">
         <div className="wrap">
           <Reveal>
@@ -392,7 +387,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="border-y border-[var(--line)] py-20 md:py-24">
         <div className="wrap">
           <SectionHead eyebrow="Graduates" title={<span className="display">4,200 people have finished a cohort. Here are three.</span>} align="center" />
@@ -416,7 +410,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* pricing */}
       <section id="pricing" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -468,7 +461,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* faq */}
       <section className="border-t border-[var(--line)] py-20 md:py-24">
         <div className="wrap grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
           <SectionHead
@@ -501,7 +493,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* apply */}
       <section id="apply" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>

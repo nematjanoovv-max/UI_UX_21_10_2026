@@ -18,4 +18,4 @@ npm run dev
 npm run build
 ```
 
-Live: https://19-fitness.vercel.app
+Live: https://19-fitness-seven.vercel.app

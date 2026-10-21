@@ -143,7 +143,6 @@ export default function Home() {
         cta={{ label: "Book appointment", href: "#contact" }}
       />
 
-      {/* hero */}
       <section className="relative overflow-hidden pb-16 pt-10 md:pb-24 md:pt-16">
         <div className="wrap grid items-center gap-14 lg:grid-cols-[1.05fr_.95fr]">
           <div>
@@ -207,7 +206,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* marquee */}
       <section className="border-y border-[var(--line)] py-5">
         <Marquee>
           {["Hand-finished in Lyon", "Recycled 18k gold", "Certified stones", "Lifetime care", "Insured worldwide shipping"].map((t) => (
@@ -219,7 +217,6 @@ export default function Home() {
         </Marquee>
       </section>
 
-      {/* collections */}
       <section id="collections" className="scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -270,7 +267,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* atelier */}
       <section id="atelier" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap grid items-center gap-16 lg:grid-cols-[.92fr_1.08fr]">
           <Reveal>
@@ -321,7 +317,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* stats */}
       <section className="py-16 md:py-20">
         <div className="wrap grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-4">
           {stats.map((s, i) => (
@@ -337,7 +332,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* care */}
       <section id="care" className="scroll-mt-24 border-y border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <SectionHead
@@ -359,7 +353,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* reviews */}
       <section className="py-20 md:py-28">
         <div className="wrap">
           <SectionHead eyebrow="Clients" title="Kept, worn, passed on." align="center" />
@@ -383,7 +376,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* appointment */}
       <section id="contact" className="scroll-mt-24 pb-24">
         <div className="wrap">
           <Reveal>
@@ -403,8 +395,8 @@ export default function Home() {
                   Book an appointment
                   <ArrowUpRight />
                 </a>
-                <a href="tel:+33472550119" className="btn btn-ghost">
-                  +33 4 72 55 01 19
+                <a href="tel:+33199001234" className="btn btn-ghost">
+                  +33 1 99 00 12 34
                 </a>
               </div>
               <p className="mt-6 flex items-center justify-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[var(--muted)]">
